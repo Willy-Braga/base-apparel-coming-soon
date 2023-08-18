@@ -1,0 +1,124 @@
+.container{
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.card{
+    background: url("../images/bg-pattern-desktop.svg") no-repeat center center / cover;
+    display: flex;
+    justify-content: space-between;
+    height: 465px;
+    gap: 20px;
+    width: 900px;
+}
+
+.card .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card .info img{
+    margin: 40px 0 0 0;
+}
+
+.card .info h1{
+    font-size: 50px;
+    color: var(--primary-color-desatured);
+    margin-left: 25%;
+}
+
+.card .info h1 p{
+    color: var(--neutral-dark);
+    font-size: 45px;
+}
+
+
+.card .info .message{
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-left: 25%;
+}
+
+.info .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-left: 5%;
+    gap: 10px;
+}
+
+.card .info #email{
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid var(--primary-color-desatured);
+}
+
+
+.info #email::placeholder{
+    color: var(--primary-color-desatured);
+    font-weight: 300;
+}
+
+.info .contact .btn{
+    border: 1px solid var(--primary-color-desatured);
+    padding: 10px 30px;
+    border-radius: 20px ;
+    background: linear-gradient(90deg, rgba(248,191,191,1) 13%, rgba(238,140,140,1) 88%);
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    color: #ffffff;
+}
+
+.contact .btn:hover{
+    transform: scale(1.1);
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.2);
+}
+
+.message-error{
+    color: var(--primary-color-soft);
+    display: none;
+    font-size: 12px;
+    text-align: start;
+    margin-left: 15px;
+}
+
+.exclamation-error{
+    padding: 3px 10px;
+    border-radius: 50%;
+    color: #fff5f5;
+    background-color: var(--primary-color-soft);
+    position: absolute;
+    right: 45px;
+    top: 5px;
+    display: none;
+    font-size: 15px;
+}
+
+.error{
+    display: block;
+}
+
+
+.input-error{
+    border: 2px solid red !important;
+}
